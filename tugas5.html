@@ -91,11 +91,29 @@
         .lead {
             font-size: 1.1rem;
         }
+
+        .border {
+            border: 1px dashed rgb(61, 168, 255) !important;
+            width: 1px;
+            height: 40px;
+        }
+
+        .arrow {
+            border: solid rgb(61, 168, 255);
+            border-width: 0 3px 3px 0;
+            display: inline-block;
+            padding: 3px;
+        }
+
+        .down {
+            transform: rotate(45deg);
+            -webkit-transform: rotate(45deg);
+        }
     </style>
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" style="background-color: transparent !important;">
         <div class="container p-2" style="font-weight: 500;">
             <a class="navbar-brand" href="#">
                 <img style="width: 25%;" src="img/logo-edu.png" alt="">
@@ -152,31 +170,37 @@
                                 <div style class="d-flex">
                                     <div class="d-flex flex-column align-items-center me-2">
                                         <div class="rounded-circle py-2 px-3 bg-primary text-white mb-1">1</div>
-                                        <div class="line h-100"></div>
+                                        <div class="border"></div>
+                                        <div class="arrow down mb-1"></div>
                                     </div>
                                     <div>
                                         <h6 class="text-dark">Daftar, Get Free Class!</h6>
-                                        <p class="lead text-muted pb-2" style="font-size: 15px; font-weight: 400;">Join komunitas belajar, dapatkan akses kelas & materi gratis</p>
+                                        <p class="lead text-muted pb-2" style="font-size: 15px; font-weight: 400;">Join
+                                            komunitas belajar, dapatkan akses kelas & materi gratis</p>
                                     </div>
                                 </div>
                                 <div class="d-flex mb-1 mt-1">
                                     <div class="d-flex flex-column align-items-center me-2">
                                         <div class="rounded-circle py-2 px-3 bg-primary text-white mb-1">2</div>
-                                        <div class="line h-100"></div>
+                                        <div class="border"></div>
+                                        <div class="arrow down"></div>
                                     </div>
                                     <div>
                                         <h6 class="text-dark">Belajar Intensif</h6>
-                                        <p class="lead text-muted pb-2" style="font-size: 15px; font-weight: 400;">Belajar didampingi virtual assistant & mentor expert via grup & 1-on-1 zoom mentoring</p>
+                                        <p class="lead text-muted pb-2" style="font-size: 15px; font-weight: 400;">
+                                            Belajar didampingi virtual assistant & mentor expert via grup & 1-on-1 zoom
+                                            mentoring</p>
                                     </div>
                                 </div>
                                 <div class="d-flex">
                                     <div class="d-flex flex-column align-items-center me-2">
                                         <div class="rounded-circle py-2 px-3 bg-primary text-white mb-1">3</div>
-                                        <div class="line h-100 d-none"></div>
+                                        <div class="border d-none"></div>
                                     </div>
                                     <div>
                                         <h6 class="text-dark">Penyaluran Kerja Dijamin</h6>
-                                        <p class="lead text-muted pb-2" style="font-size: 15px; font-weight: 400;">Dapatkan pekerjaan dengan gaji s.d 10jt lebih</p>
+                                        <p class="lead text-muted pb-2" style="font-size: 15px; font-weight: 400;">
+                                            Dapatkan pekerjaan dengan gaji s.d 10jt lebih</p>
                                     </div>
                                 </div>
                             </div>
